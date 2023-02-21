@@ -1,8 +1,5 @@
 //Data
 
-
-
-
 import { Link } from "react-router-dom";
 
 function ProjectCard(props) {
@@ -10,7 +7,7 @@ function ProjectCard(props) {
 
   return (
     <div>
-      <Link to="/project">
+      <Link to={`project/${projectData.id}`}>
         <img src={projectData.image} />
         <h3>{projectData.title}</h3>
       </Link>
